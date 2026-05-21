@@ -32,7 +32,7 @@ Este projeto aproveita o poder do VBA para criar uma aplicação rica em funcion
 Um dos grandes diferenciais deste projeto é a utilização da **Linguagem M** para transformar dados brutos em inteligência de negócio. O processo de ETL realiza:
 
 *   **Mesclagem de Bases:** Consolidação de dados de fontes externas, Carteira de Obras e Programações do SharePoint via `Table.NestedJoin`.
-*   **Lógica de Status Dinâmica:** Atribuição automática do "Status Final" da obra com base em múltiplas variáveis (datas de início, última atividade, status de faturamento e indicadores do SIAGO).
+*   **Lógica de Status Dinâmica:** Atribuição automática do "Status Final" da obra com base em múltiplas variáveis.
 *   **Cálculos Financeiros:** Processamento de valores orçados, executados, consolidados e saldos remanescentes em tempo real.
 *   **Classificação Personalizada:** Implementação de lógica de ordenação estratégica para priorização de visualização no Dashboard.
 *   
