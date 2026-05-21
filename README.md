@@ -1,4 +1,4 @@
-# ⚡ Gestão Estratégica de Obras no Setor Elétrico
+# ⚡ Operação DCMD: Gestão Estratégica de Obras no Setor Elétrico
 
 ## 🚀 Visão Geral do Projeto
 
