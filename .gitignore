@@ -1,0 +1,16 @@
+# Arquivos binários do Office
+*.xlsm *.xltm *.docm *.dotm *.accdb *.mdb
+
+# Logs, cache e temporários
+*.log *.tmp ~$*
+.DS_Store Thumbs.db
+
+# Pastas de build ou relatórios
+/output/
+/exports_temp/
+
+# Mantenha apenas o código VBA
+# !VBA_Export/*.bas
+# !VBA_Export/*.cls
+# !VBA_Export/*.frm
+# !VBA_Export/*.frx
