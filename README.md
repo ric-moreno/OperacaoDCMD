@@ -65,8 +65,8 @@ Desenvolvido por: Pedro Ricardo Moreno
 https://www.linkedin.com/in/pedroricardomoreno/  
 
 JSON Converter for VBA  
-VBA-JSON v2.3.1
-(c) Tim Hall - https://github.com/VBA-tools/VBA-JSON
-@class JsonConverter
-@author tim.hall.engr@gmail.com
+VBA-JSON v2.3.1  
+(c) Tim Hall - https://github.com/VBA-tools/VBA-JSON  
+@class JsonConverter  
+@author tim.hall.engr@gmail.com  
 @license MIT (http://www.opensource.org/licenses/mit-license.php)
