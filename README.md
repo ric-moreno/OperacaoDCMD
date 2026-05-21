@@ -1,4 +1,4 @@
-# ⚡ Operação DCMD — Controle de Obras e Programação de Equipes
+# ⚡ Controle e Programação de Obra no Setor Elétrico
 
 Sistema de gestão operacional desenvolvido em **Excel + VBA** para o acompanhamento e programação de obras de construção e manutenção em redes elétricas.
 
