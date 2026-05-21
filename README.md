@@ -2,7 +2,7 @@
 
 ## 🚀 Visão Geral do Projeto
 
-O **Operação DCMD** é uma solução robusta desenvolvida em **VBA (Visual Basic for Applications)** para Microsoft Excel, projetada para otimizar a gestão operacional de projetos de construção e manutenção de redes elétricas. Este sistema centraliza o planejamento, execução e acompanhamento de obras, oferecendo uma visão 360 graus das operações, proporcionando eficiência, controle financeiro e visibilidade em tempo real.
+O **Operação DCMD** é uma solução robusta desenvolvida para otimizar a gestão operacional de projetos de construção e manutenção de redes elétricas. Este sistema centraliza o planejamento, execução e acompanhamento de obras, integrando **VBA** para automação de interface e **Power Query (Linguagem M)** para uma modelagem de dados avançada. Oferece uma visão 360 graus das operações, permitindo o controle financeiro e a visibilidade em tempo real de metas e indicadores.
 
 ## ✨ Funcionalidades Principais
 
@@ -19,6 +19,7 @@ Este projeto aproveita o poder do VBA para criar uma aplicação rica em funcion
 
 *   **Microsoft Excel:** Plataforma principal para a interface do usuário e armazenamento de dados.
 *   **VBA (Visual Basic for Applications):** Linguagem de programação para automação, lógica de negócios e interação com APIs.
+*   **Power Query (Linguagem M):** Motor de ETL (Extract, Transform, Load) utilizado para a modelagem complexa de dados, consolidação de bases e cálculos de indicadores.
 *   **Microsoft Graph API:** Utilizada para interagir com serviços da Microsoft 365, como o SharePoint, para leitura e escrita de dados.
 *   **Microsoft SharePoint:** Serve como um robusto backend para armazenamento de dados e controle de versão das informações do projeto.
 *   **OAuth 2.0 Device Code Flow:** Implementado para um processo de autenticação seguro e eficiente com a Microsoft Graph API, permitindo que o aplicativo obtenha tokens de acesso sem expor credenciais.
@@ -26,6 +27,15 @@ Este projeto aproveita o poder do VBA para criar uma aplicação rica em funcion
 *   **JsonConverter (VBA-JSON):** Biblioteca VBA para serialização e desserialização de objetos JSON, essencial para o tratamento de respostas da API Graph. Biblioteca JSON Converter for VBA, desenvolvido por Tim Hall
 *   **Registro do Windows:** Utilizado para persistir de forma segura os tokens de acesso e refresh evitando a necessidade de reautenticação constante.
 
+## 📊 Modelagem de Dados com Power Query
+
+Um dos grandes diferenciais deste projeto é a utilização da **Linguagem M** para transformar dados brutos em inteligência de negócio. O processo de ETL realiza:
+
+*   **Mesclagem de Bases:** Consolidação de dados de fontes externas, Carteira de Obras e Programações do SharePoint via `Table.NestedJoin`.
+*   **Lógica de Status Dinâmica:** Atribuição automática do "Status Final" da obra com base em múltiplas variáveis (datas de início, última atividade, status de faturamento e indicadores do SIAGO).
+*   **Cálculos Financeiros:** Processamento de valores orçados, executados, consolidados e saldos remanescentes em tempo real.
+*   **Classificação Personalizada:** Implementação de lógica de ordenação estratégica para priorização de visualização no Dashboard.
+*   
 ## 🏗️ Arquitetura e Integrações
 
 Projetado com uma arquitetura que maximiza a funcionalidade do Excel enquanto se integra a serviços corporativos essenciais:
@@ -33,6 +43,7 @@ Projetado com uma arquitetura que maximiza a funcionalidade do Excel enquanto se
 *   **Frontend (Excel/VBA):** A interface do usuário é totalmente construída no Excel, utilizando formulários (UserForms) e controles ActiveX para uma experiência interativa.
 *   **Backend (SharePoint):** Listas e bibliotecas do SharePoint são utilizadas para armazenar os dados operacionais, financeiros e de programação, garantindo escalabilidade e acesso colaborativo.
 *   **Camada de Comunicação (Microsoft Graph API):** Todas as interações com o SharePoint são realizadas através da Microsoft Graph API, proporcionando uma comunicação padronizada e segura.
+*   **Camada de Dados (Power Query):** Responsável por todo o tratamento pesado de dados, garantindo que o VBA foque apenas na interface e automação.
 
 ### Fluxo de Autenticação (OAuth 2.0 Device Code Flow)
 
