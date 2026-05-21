@@ -61,10 +61,10 @@ O repositório contém os seguintes módulos VBA e arquivos de formulário:
 
 ## 📄 Licença
 
-Desenvolvido por: Pedro Ricardo Moreno
-https://www.linkedin.com/in/pedroricardomoreno/
+Desenvolvido por: Pedro Ricardo Moreno  
+https://www.linkedin.com/in/pedroricardomoreno/  
 
-JSON Converter for VBA
+JSON Converter for VBA  
 VBA-JSON v2.3.1
 (c) Tim Hall - https://github.com/VBA-tools/VBA-JSON
 @class JsonConverter
